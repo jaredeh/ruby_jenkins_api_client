@@ -1,6 +1,6 @@
 FROM ruby:alpine
-MAINTAINER Jared Hulbert <jaredeh@gmail.com>
+LABEL Description="This image is holds a ruby install with the jenkins_api_client gem and it's dependencies" Vendor="jaredeh" Version="0.1"
 
 RUN apk update && apl upgrade
-RUN apk add --update alpine-sdk
+RUN apk add --no-cache alpine-sdk
 RUN gem install jenkins_api_client
