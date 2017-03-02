@@ -4,3 +4,4 @@ LABEL Description="This image is holds a ruby install with the jenkins_api_clien
 RUN apk update && apk upgrade
 RUN apk add --no-cache alpine-sdk
 RUN gem install jenkins_api_client
+RUN mkdir -p /usr/src/code
