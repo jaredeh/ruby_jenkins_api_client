@@ -1,7 +1,7 @@
 # ruby_jenkins_api_client
 Docker image and helpers for working with jenkins_api_client gem
 
-The jenkins_api_client gem is not a trivial install, it requires building native extensions which don't always work.  To deal with that the Dockerfile included here is set to build a docker image that has the gem installed.  You can use this image to run local ruby scripts that access a jenkins server.
+*Dockerfile* creates a docker image that has the jenkins_api_client gem installed.  You can use this image to run local ruby scripts that access a jenkins server.  The gem is not a trivial install, it requires building native extensions which don't always work so I found using a container to be easier than installing the right ruby and deps on various workstations.
 
 *ruby_jenkins* can be installed or run locally an is just a helper to run the docker image.
 
