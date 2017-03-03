@@ -1,0 +1,2 @@
+#!/bin/sh
+docker run -it --rm --net=host -v "$PWD":/usr/src/code -w /usr/src/code jaredeh/ruby_jenkins_api_client ruby $@
