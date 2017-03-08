@@ -10,7 +10,7 @@ RUN apk add --no-cache alpine-sdk; \
 RUN apk add --no-cache linux-headers openssl-dev curl file gcc libgcc libc-dev make libtool; \
     /pkg.sh build ipmitool-1.8.16; \
     rm -rf /tmp/*; \
-    apk del --no-cache linux-headers openssl-dev curl file gcc libgcc libc-dev make libtool; \
+    apk del --no-cache linux-headers openssl-dev curl file gcc libgcc libc-dev make libtool
 
 
 RUN gem install rubyipmi
