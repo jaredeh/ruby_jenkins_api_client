@@ -14,6 +14,7 @@ RUN apk add --no-cache linux-headers openssl-dev curl file gcc libgcc libc-dev m
 
 
 RUN gem install rubyipmi
+RUN gem install net-ping
 
 RUN mkdir -p /usr/src/code
 
