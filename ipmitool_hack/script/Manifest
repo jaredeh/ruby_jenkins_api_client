@@ -1,6 +1,0 @@
-SOURCE  3c5da6b067abf475bc24685120ec79f6e4ef6b3ea606aaa267e462023861223e  ipmitool-1.8.16.tar.bz2
-SCRIPT  b96a74ae8142900b5af22a363e63c07309b424c3b112e37c1f34b8dca7f83f7c  ipmitool-0.build
-SCRIPT  e1233372468c77eb8d975f1ec49f707687418a2c86ca3ffebd5b062fcd43225f  ipmitool-1.8.16.build
-AUX  ce7074d9e37aae3fd4c6d662b3d8d7ac5c7126fd689abc389abbf04685a22d76  ipmitool-1.8.16-imbapi-include-socket-h.patch
-AUX  d9f48fe487de5d2db20fbd5f81de47e0525105139571910551f12f9b860a45d6  ipmitool-1.8.16-imbapi-include-stddef-h.patch
-AUX  2eb0f23030178c31f434d4379f4a4dbd5e1c142f8e681836446ee06614dd8eb7  ipmitool-1.8.16-imbapi-pagesize.patch
