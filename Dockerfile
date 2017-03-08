@@ -9,6 +9,7 @@ RUN apt-get install -y build-essential; \
 RUN apt-get install -y ipmitool
 
 RUN gem install rubyipmi
+RUN gem install net-ping
 
 RUN mkdir -p /usr/src/code
 
