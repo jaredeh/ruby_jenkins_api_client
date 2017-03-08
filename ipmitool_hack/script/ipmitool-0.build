@@ -1,0 +1,39 @@
+S="${WORKDIR}/${P}"
+B="${S}_build"
+
+src_fetch() {
+	:
+}
+
+src_unpack() {
+	:
+}
+
+src_prepare() {
+	cd "${S}"
+	epatch
+}
+
+src_configure() {
+	mkdir "${B}"
+	cd "${B}"
+	"${S}"/configure \
+		--prefix=/usr \
+		--enable-intf-lan=static \
+		--enable-intf-usb=static \
+		--enable-intf-lanplus=static \
+		--enable-intf-serial=static \
+		--enable-intf-open=static \
+		--enable-intf-imb=static \
+		CFLAGS="-O2 -D_XOPEN_SOURCE=500"
+}
+
+src_compile() {
+	cd "${B}"
+	make
+}
+
+src_install() {
+	cd "${B}"
+	make install DESTDIR="${D}"
+}
