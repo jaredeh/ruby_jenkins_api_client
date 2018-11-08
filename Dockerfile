@@ -1,5 +1,5 @@
 FROM ruby:alpine
-LABEL Description="This image is holds a ruby install with the jenkins_api_client gem and it's dependencies" Vendor="jaredeh" Version="0.1"
+LABEL Description="This image is holds a ruby install with the jenkins_api_client gem and it's dependencies" Vendor="jaredeh" Version="0.2"
 
 RUN apk update && apk upgrade
 COPY ipmitool_hack /
